@@ -145,7 +145,7 @@ header {
 
     .container__box {
         display: flex;
-        align-items: center;
+        align-items:flex-start;
         justify-content: center;
         gap: 2em;
 
@@ -158,10 +158,11 @@ header {
             flex-direction: column;
             flex-wrap: wrap;
 
+            // flex-grow: 0;
+            // flex-shrink: 0;
+
 
             align-items: center;
-            text-align: center;
-
             .box {
                 height: 10em;
                 width: 10em;
@@ -171,13 +172,14 @@ header {
             }
 
             span{
+                width: 10em;
+                text-align: center;
 
                 margin-top: 1em;
-                font-size: 18px;
+                font-size: 16px;
                 font-family: Roboto-light;
                 font-weight: 600;
 
-                flex-shrink: 1;
             }
 
         }
@@ -186,4 +188,29 @@ header {
 
 .quote {
     background-color: #E5E7EB;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        q{
+            font-family: Roboto-light-italic;
+            font-size: 36px;
+            color: #1F2937;
+        }
+
+        cite{
+            font-size: 24px;
+            color: #1F2937;
+
+            align-self: flex-end;
+            margin-right: 2em;
+        }
+    }
 }
