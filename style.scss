@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Roboto-extrabold;
+    src: url(./fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: Roboto-light;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: Roboto-light-italic;
+    src: url(./fonts/Roboto-LightItalic.ttf);
+}
+
+*{
+font-family: Roboto-bold;
+margin: 0;
+padding: 0;
+}
+
+header{
+    background-color: #1F2937;
+    color: white;
+
+    nav{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 80%;
+        margin: 0 auto;
+
+        h5{
+            font-size: 24px;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            margin: .5em 0 1em 0;
+
+            li{
+            font-family: Roboto-light;
+            color: white;
+            font-size: 16px;
+
+            &:hover{
+                background-color: white;
+                color: #1F2937;
+
+                // fix this
+            }
+            
+            }
+
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .hero{
+        display: flex;
+        gap: 2em;
+        width: 80%;
+        margin: 0 auto;
+        padding: 8em 5em;
+
+        justify-content: center;
+        // flex-wrap: wrap;
+
+
+        &__text{
+            width: 50%;
+
+            flex-basis: 330px;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            h1{
+                font-size: 48px;
+            }
+
+            p{
+                font-size: 18px;
+                text-align: justify;
+                font-family: Roboto-light;
+            }
+
+            button{
+                margin-top: 1em;
+                background-color: #3B82F6;
+                color: white;
+                border: none;
+                font-size: large;
+                // border-radius: 10%;
+
+                padding: 8px 16px;
+            }
+        }
+
+        &__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-basis: 330px;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            width: 50%;
+            background-color: #E5E7EB;
+
+            color:#1F2937;
+
+            img{
+
+            }
+        }
+
+
+    }
+
+    
+}
+
+.information{
+    h2{
+        margin: 1em 0;
+        text-align: center;
+        font-size: 36px;
+        color: #1F2937;
+    }
+
+    .container__box{
+        display: flex;
+
+        .box{
+            height: 1em;
+            width:1em;
+
+            background-color: #3B82F6;
+        }
+    }
+}
