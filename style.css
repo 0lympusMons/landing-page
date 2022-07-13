@@ -93,6 +93,7 @@ header .hero__img {
   background-color: #E5E7EB;
   color: #1F2937;
 }
+
 .information {
   margin-bottom: 6em;
 }
@@ -153,4 +154,48 @@ header .hero__img {
   color: #1F2937;
   align-self: flex-end;
   margin-right: 2em;
+}
+
+.cta {
+  height: auto;
+  padding: 15vh 0;
+  display: flex;
+  align-items: center;
+}
+.cta__wrapper {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  background-color: #3B82F6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 5em;
+  border-radius: 1em;
+}
+.cta__wrapper button {
+  border: 2px solid white;
+  border-radius: 1em;
+  color: white;
+  padding: 0.5em 2em;
+  background-color: #3B82F6;
+  font-size: 20px;
+}
+.cta__text {
+  color: white;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.cta__text .small {
+  font-size: 16px;
+  font-family: Roboto-light;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  background-color: #1F2937;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
