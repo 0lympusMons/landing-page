@@ -144,7 +144,7 @@ header {
 
     .container__box {
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: center;
         gap: 2em;
 
@@ -162,6 +162,7 @@ header {
 
 
             align-items: center;
+
             .box {
                 height: 10em;
                 width: 10em;
@@ -170,7 +171,7 @@ header {
                 border-radius: .5em;
             }
 
-            span{
+            span {
                 width: 10em;
                 text-align: center;
 
@@ -187,24 +188,26 @@ header {
 
 .quote {
     background-color: #E5E7EB;
-    height: 50vh;
+
+    padding: 15vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         width: 50%;
 
-        q{
+        q {
             font-family: Roboto-light-italic;
             font-size: 36px;
             color: #1F2937;
         }
 
-        cite{
+        cite {
             font-size: 24px;
             color: #1F2937;
 
@@ -214,7 +217,7 @@ header {
     }
 }
 
-.cta{
+.cta {
     height: auto;
 
     padding: 15vh 0;
@@ -223,35 +226,35 @@ header {
     align-items: center;
     // justify-content: center;
 
-    &__wrapper{
+    &__wrapper {
         margin: auto;
-            width: 50%;
-            display: flex;
-            background-color: #3B82F6;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2em 5em;
+        width: 50%;
+        display: flex;
+        background-color: #3B82F6;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 5em;
+        border-radius: 1em;
+
+        button {
+            border: 2px solid white;
             border-radius: 1em;
+            color: white;
+            padding: .5em 2em;
+            background-color: #3B82F6;
 
-            button{
-                border: 2px solid white;
-                border-radius: 1em;
-                color: white;
-                padding: .5em 2em;
-                background-color: #3B82F6;
-
-                font-size: 20px;
-            }
+            font-size: 20px;
+        }
     }
 
-    &__text{
-        color:white;
+    &__text {
+        color: white;
 
-        font-size:36px;
+        font-size: 36px;
         display: flex;
         flex-direction: column;
 
-        .small{
+        .small {
             font-size: 16px;
             font-family: Roboto-light;
         }
@@ -260,7 +263,7 @@ header {
     }
 }
 
-footer{
+footer {
     display: flex;
     height: 10vh;
     background-color: #1F2937;
