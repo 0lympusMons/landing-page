@@ -93,6 +93,9 @@ header .hero__img {
   background-color: #E5E7EB;
   color: #1F2937;
 }
+.information {
+  margin-bottom: 6em;
+}
 .information h2 {
   margin: 1em 0;
   text-align: center;
@@ -101,9 +104,33 @@ header .hero__img {
 }
 .information .container__box {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 80%;
+  margin: 0 auto;
 }
-.information .container__box .box {
-  height: 1em;
-  width: 1em;
-  background-color: #3B82F6;
+.information .container__box .wrapper__box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.information .container__box .wrapper__box .box {
+  height: 10em;
+  width: 10em;
+  border: solid #3B82F6;
+  border-radius: 0.5em;
+}
+.information .container__box .wrapper__box span {
+  margin-top: 1em;
+  font-size: 18px;
+  font-family: Roboto-light;
+  font-weight: 600;
+  flex-shrink: 1;
+}
+
+.quote {
+  background-color: #E5E7EB;
 }/*# sourceMappingURL=style.css.map */

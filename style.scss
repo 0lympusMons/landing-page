@@ -8,27 +8,27 @@
     src: url(./fonts/Roboto-Bold.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: Roboto-light;
     src: url(./fonts/Roboto-Light.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: Roboto-light-italic;
     src: url(./fonts/Roboto-LightItalic.ttf);
 }
 
-*{
-font-family: Roboto-bold;
-margin: 0;
-padding: 0;
+* {
+    font-family: Roboto-bold;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     background-color: #1F2937;
     color: white;
 
-    nav{
+    nav {
 
         display: flex;
         align-items: center;
@@ -37,39 +37,39 @@ header{
         width: 80%;
         margin: 0 auto;
 
-        h5{
+        h5 {
             font-size: 24px;
         }
 
-        ul{
+        ul {
             display: flex;
             list-style: none;
             gap: 1em;
             margin: .5em 0 1em 0;
 
-            li{
-            font-family: Roboto-light;
-            color: white;
-            font-size: 16px;
+            li {
+                font-family: Roboto-light;
+                color: white;
+                font-size: 16px;
 
-            &:hover{
-                background-color: white;
-                color: #1F2937;
+                &:hover {
+                    background-color: white;
+                    color: #1F2937;
 
-                // fix this
-            }
-            
+                    // fix this
+                }
+
             }
 
 
         }
 
-        a{
+        a {
             text-decoration: none;
         }
     }
 
-    .hero{
+    .hero {
         display: flex;
         gap: 2em;
         width: 80%;
@@ -80,24 +80,24 @@ header{
         // flex-wrap: wrap;
 
 
-        &__text{
+        &__text {
             width: 50%;
 
             flex-basis: 330px;
             flex-shrink: 0;
             flex-grow: 1;
 
-            h1{
+            h1 {
                 font-size: 48px;
             }
 
-            p{
+            p {
                 font-size: 18px;
                 text-align: justify;
                 font-family: Roboto-light;
             }
 
-            button{
+            button {
                 margin-top: 1em;
                 background-color: #3B82F6;
                 color: white;
@@ -109,7 +109,7 @@ header{
             }
         }
 
-        &__img{
+        &__img {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,35 +121,69 @@ header{
             width: 50%;
             background-color: #E5E7EB;
 
-            color:#1F2937;
+            color: #1F2937;
 
-            img{
-
-            }
+            img {}
         }
 
 
     }
 
-    
+
 }
 
-.information{
-    h2{
+.information {
+
+    margin-bottom: 6em;
+
+    h2 {
         margin: 1em 0;
         text-align: center;
         font-size: 36px;
         color: #1F2937;
     }
 
-    .container__box{
+    .container__box {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
 
-        .box{
-            height: 1em;
-            width:1em;
+        width: 80%;
+        margin: 0 auto;
 
-            background-color: #3B82F6;
+        .wrapper__box {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+
+            align-items: center;
+            text-align: center;
+
+            .box {
+                height: 10em;
+                width: 10em;
+
+                border: solid #3B82F6;
+                border-radius: .5em;
+            }
+
+            span{
+
+                margin-top: 1em;
+                font-size: 18px;
+                font-family: Roboto-light;
+                font-weight: 600;
+
+                flex-shrink: 1;
+            }
+
         }
     }
+}
+
+.quote {
+    background-color: #E5E7EB;
 }
